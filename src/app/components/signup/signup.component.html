@@ -1,0 +1,11 @@
+<p>signup works!</p>
+<div class="signup-container">
+    <h2>Sign Up</h2>
+    <input type="email" [(ngModel)]="email" placeholder="Email">
+    <input type="password" [(ngModel)]="password" placeholder="Password">
+    <button (click)="signup()">Sign Up</button>
+    <button (click)="googleSignup()">Sign Up with Google</button>
+    <p *ngIf="errorMessage">{{ errorMessage }}</p>
+    <p>Already have an account? <a routerLink="/login">Login</a></p>
+  </div>
+  
